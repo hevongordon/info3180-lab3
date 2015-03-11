@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Contact</title>
+</head>
+
+<body>
+
+<form action="{{url_for('contact')}}" method="POST">
+	
+    <p class="error"><strong>Error:</strong> {{ error }} </p>
+	<h1>Contact Form</h1>
+	<p>fill out this form to contact the site owners</p>
+	<p><h3>name</h3></p>
+	<p>please enter your full name</p>
+	<input type="text" name="name" />
+	<p><h3>Email</h3></p>
+	<p>please enter your email address</p>
+	<input type="text" name="email" />
+	<p><h3>Subject<h3></p>
+	<input type="text" name="subject" />
+	<p><h3>Message</h3></p>
+	<p>please enter the message you wish to send</p>
+	<textarea rows="5" cols="50" name="message"></textarea><br/>
+	<!--<input type="submit" value="Submit" />-->
+</form>
+
+</body>
+
+
+</html>
